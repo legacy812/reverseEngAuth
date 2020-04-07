@@ -1,0 +1,28 @@
+The setup starts with the server.js
+
+We import express, express-session, and passport from installing npm.
+
+We set the port equal to 8080 (which is routine) and bring in our db (models)
+
+We create the middleware and app using express.
+
+We connect our public folder and initialize passport.
+
+We connect our routes and then connect our db with sequelize.
+
+
+Config folder---
+We have middleware for restricting routes a user is not allowed to visit if they are not logged in.
+
+If they are logged in, they can view it.
+
+In passport.js, we import passport and use the localhost. We create a function that requires a email and password. If the email is not in the database, it will return incorrect email.
+
+
+MODELS FOLDER----
+We create code for sequelize. We use bcrypt for password hashing. We use sequelize to create users and validate information.
+
+In the public folder, we have our js, css, and html. Our JS will allow us to login and give functionality. The CSS and HTML is for design.
+
+
+Lastly, our routes folder hooks it all together.
